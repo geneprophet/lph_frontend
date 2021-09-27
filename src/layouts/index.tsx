@@ -4,7 +4,7 @@ import styles from './index.less';
 import cn from 'classnames';
 const { Header, Content, Footer } = Layout;
 const Index = (props:any) => {
-  
+
   return (
     <Row className={styles.container}>
       <Col md={24}>
@@ -12,7 +12,7 @@ const Index = (props:any) => {
           <Header className={cn({[styles.header]:!props.isScrollToTop},{[styles.bg]:props.isScrollToTop})}>
             <Row>
               <Col md={4}>
-                <a style={{marginTop:'-10px',width:'250px', fontSize:'14px', fontWeight: 'bold',color:'black'}}>Laboratory for Precision Health</a>
+                <a style={{marginTop:'-10px',width:'250px', fontSize:'14px', fontWeight: 'bold',color:'black',fontFamily:"Kaushan Script"}}>Laboratory for Precision Health</a>
               </Col>
               <Col md={20}>
                 <Menu className={styles.menu} mode="horizontal" defaultSelectedKeys={['1']} inlineCollapsed={false}>

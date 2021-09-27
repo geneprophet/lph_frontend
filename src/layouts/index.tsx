@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import {Row, Col,Layout,Menu} from 'antd';
+import {Row, Col,Layout,Menu,BackTop} from 'antd';
 import styles from './index.less';
 import cn from 'classnames';
 const { Header, Content, Footer } = Layout;
@@ -12,7 +12,7 @@ const Index = (props:any) => {
           <Header className={cn({[styles.header]:!props.isScrollToTop},{[styles.bg]:props.isScrollToTop})}>
             <Row>
               <Col md={4}>
-                <a style={{marginTop:'-10px',width:'250px', fontSize:'14px', fontWeight: 'bold',color:'black',fontFamily:"Kaushan Script"}}>Laboratory for Precision Health</a>
+                <a style={{marginTop:'-10px',marginLeft:'-10px',lineHeight:'20px', fontSize:'18px', fontWeight: 'bold',color:'#4088b8',fontFamily:"Kaushan Script"}}>Laboratory for Precision Health</a>
               </Col>
               <Col md={20}>
                 <Menu className={styles.menu} mode="horizontal" defaultSelectedKeys={['1']} inlineCollapsed={false}>
@@ -20,11 +20,10 @@ const Index = (props:any) => {
                   <Menu.Item key="2">Research</Menu.Item>
                   <Menu.Item key="3">Software</Menu.Item>
                   <Menu.Item key="4">Database</Menu.Item>
-                  <Menu.Item key="5">Publication</Menu.Item>
-                  <Menu.Item key="6">Publication</Menu.Item>
-                  <Menu.Item key="7">Member</Menu.Item>
-                  <Menu.Item key="8">Join us</Menu.Item>
-                  <Menu.Item key="9">Contact</Menu.Item>
+                  <Menu.Item key="5">Publications</Menu.Item>
+                  <Menu.Item key="6">Members</Menu.Item>
+                  <Menu.Item key="7">Join us</Menu.Item>
+                  <Menu.Item key="8">Contact</Menu.Item>
                 </Menu>
               </Col>
             </Row>
@@ -35,6 +34,7 @@ const Index = (props:any) => {
                 {props.children}
               </Col>
             </Row>
+            <BackTop />
           </Content>
           <Footer style={{ textAlign: 'center' }}>Lab website ©2021 Created by LPH-BIG</Footer>
         </Layout>

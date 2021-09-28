@@ -36,7 +36,11 @@ const Index = (props:any) => {
             </Row>
             <BackTop />
           </Content>
-          <Footer style={{ textAlign: 'center' }}>Lab website ©2021 Created by LPH-BIG</Footer>
+          <Footer style={{ textAlign: 'center' ,marginTop:'5%'}}>
+            <p>Lab website ©2021 Created by LPH-BIG</p>
+            <p>No.1 Beichen West Road, Chaoyang District, Beijing 100101, China
+            </p>
+          </Footer>
         </Layout>
       </Col>
     </Row>

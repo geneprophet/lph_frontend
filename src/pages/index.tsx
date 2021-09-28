@@ -1,7 +1,8 @@
 import styles from './index.less';
 import {Col, Row, Carousel, Typography, Timeline, List, Avatar, Divider} from "antd";
 import { ClockCircleOutlined } from '@ant-design/icons';
-
+import {LeftOutlined,RightOutlined}  from '@ant-design/icons';
+import Photo1 from '../assets/party.jpg';
 const { Title ,Paragraph,Text } = Typography;
 export default function IndexPage() {
   const data = [
@@ -22,7 +23,7 @@ export default function IndexPage() {
     <>
       <Row>
         <Col md={24}>
-          <Carousel autoplay>
+          <Carousel autoplay arrows={true} prevArrow={<LeftOutlined />} nextArrow={<RightOutlined />}>
             <div>
               <h1 className={styles.contentStyle}>1</h1>
             </div>
@@ -39,7 +40,7 @@ export default function IndexPage() {
         </Col>
       </Row>
       <Row justify={"center"} style={{marginTop:'20px'}}>
-        <Col md={22}>
+        <Col md={18}>
           <Paragraph>
             <Text style={{fontSize:'large'}}>
               &nbsp;&nbsp;&nbsp;&nbsp;Welcome to the <span style={{fontWeight:"bold"}}>Laboratory for Precision Health</span>.

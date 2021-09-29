@@ -19,6 +19,41 @@ export default defineConfig({
           component: '@/pages/index',
           breadcrumbName: 'Home',
         },
+        {
+          path: '/research',
+          component: '@/pages/Research',
+          breadcrumbName: 'Research',
+        },
+        {
+          path: '/software',
+          component: '@/pages/Software',
+          breadcrumbName: 'Software',
+        },
+        {
+          path: '/database',
+          component: '@/pages/Database',
+          breadcrumbName: 'Database',
+        },
+        {
+          path: '/publication',
+          component: '@/pages/Publication',
+          breadcrumbName: 'Publication',
+        },
+        {
+          path: '/member',
+          component: '@/pages/Member',
+          breadcrumbName: 'Member',
+        },
+        {
+          path: '/join',
+          component: '@/pages/Join',
+          breadcrumbName: 'Join',
+        },
+        {
+          path: '/contact',
+          component: '@/pages/Contact',
+          breadcrumbName: 'Contact',
+        },
       ]},
   ],
   fastRefresh: {},

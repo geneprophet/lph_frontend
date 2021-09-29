@@ -1,8 +1,9 @@
 import styles from './index.less';
-import {Col, Row, Carousel, Typography, Timeline, List, Avatar, Divider} from "antd";
+import {Col, Row, Carousel, Typography, Timeline, List, Avatar, Divider, Menu} from "antd";
 import { ClockCircleOutlined } from '@ant-design/icons';
 import {LeftOutlined,RightOutlined}  from '@ant-design/icons';
-import Photo1 from '../assets/party.jpg';
+import React from "react";
+// import Photo1 from '../assets/party.jpg';
 const { Title ,Paragraph,Text } = Typography;
 export default function IndexPage() {
   const data = [
@@ -20,7 +21,7 @@ export default function IndexPage() {
     },
   ];
   return (
-    <>
+    <div>
       <Row>
         <Col md={24}>
           <Carousel autoplay arrows={true} prevArrow={<LeftOutlined />} nextArrow={<RightOutlined />}>
@@ -114,6 +115,6 @@ export default function IndexPage() {
 
         </Col>
       </Row>
-    </>
+    </div>
   );
 }

@@ -8,6 +8,7 @@ export default defineConfig({
   routes: [
     { path: '/',
       component: '@/layouts/index' ,
+      breadcrumbName:'Home',
       routes:[
         {
           path:'/',

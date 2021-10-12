@@ -25,26 +25,59 @@ export default function Page() {
         <Tabs defaultActiveKey="1" centered>
           <TabPane tab="ALL" key="1">
             <Row justify={'space-around'}>
-                <Col md={3}>
+                <Col md={4}>
                   <Card hoverable cover={<Image width={'100%'} preview={false} src={PI}></Image>}>
-                    <Meta style={{color:"black"}} title={<p className={styles.keyword}>Peilin Jia</p>} description={<p className={styles.title} style={{color:"black"}}>Principal Investigator</p>} />
+                    <Meta style={{color:"black"}} title={<p className={styles.name}>Peilin Jia</p>} description={<p className={styles.keyword} style={{color:"black"}}>Principal Investigator</p>} />
                   </Card>
                 </Col>
-                <Col md={3}>
+                <Col md={4}>
                   <Card hoverable cover={<Image width={'100%'} preview={false} src={KHE}></Image>}>
-                    <Meta style={{color:"black"}} title={<p className={styles.keyword}>Hongen Kang</p>} description={<p className={styles.title} style={{color:"black"}}>PhD Candidate</p>} />
+                    <Meta style={{color:"black"}} title={<p className={styles.name}>Hongen Kang</p>} description={<p className={styles.keyword} style={{color:"black"}}>PhD Candidate</p>} />
                   </Card>
                 </Col>
             </Row>
           </TabPane>
           <TabPane tab="PI" key="2">
-            Content of Tab Pane 2
+            <Row justify={'space-around'}>
+              <Col md={4}>
+                <Card hoverable cover={<Image width={'100%'} preview={false} src={PI}></Image>}>
+                  <Meta style={{color:"black"}} title={<p className={styles.name}>Peilin Jia</p>} description={<p className={styles.keyword} style={{color:"black"}}>Principal Investigator</p>} />
+                </Card>
+              </Col>
+              <Col md={4}>
+                <Card hoverable cover={<Image width={'100%'} preview={false} src={KHE}></Image>}>
+                  <Meta style={{color:"black"}} title={<p className={styles.name}>Hongen Kang</p>} description={<p className={styles.keyword} style={{color:"black"}}>PhD Candidate</p>} />
+                </Card>
+              </Col>
+            </Row>
           </TabPane>
           <TabPane tab="RESEARCH STAFF" key="3">
-            Content of Tab Pane 3
+            <Row justify={'space-around'}>
+              <Col md={4}>
+                <Card hoverable cover={<Image width={'100%'} preview={false} src={PI}></Image>}>
+                  <Meta style={{color:"black"}} title={<p className={styles.name}>Peilin Jia</p>} description={<p className={styles.keyword} style={{color:"black"}}>Principal Investigator</p>} />
+                </Card>
+              </Col>
+              <Col md={4}>
+                <Card hoverable cover={<Image width={'100%'} preview={false} src={KHE}></Image>}>
+                  <Meta style={{color:"black"}} title={<p className={styles.name}>Hongen Kang</p>} description={<p className={styles.keyword} style={{color:"black"}}>PhD Candidate</p>} />
+                </Card>
+              </Col>
+            </Row>
           </TabPane>
           <TabPane tab="STUDENTS" key="4">
-            Content of Tab Pane 4
+            <Row justify={'space-around'}>
+              <Col md={4}>
+                <Card hoverable cover={<Image width={'100%'} preview={false} src={PI}></Image>}>
+                  <Meta style={{color:"black"}} title={<p className={styles.name}>Peilin Jia</p>} description={<p className={styles.keyword} style={{color:"black"}}>Principal Investigator</p>} />
+                </Card>
+              </Col>
+              <Col md={4}>
+                <Card hoverable cover={<Image width={'100%'} preview={false} src={KHE}></Image>}>
+                  <Meta style={{color:"black"}} title={<p className={styles.name}>Hongen Kang</p>} description={<p className={styles.keyword} style={{color:"black"}}>PhD Candidate</p>} />
+                </Card>
+              </Col>
+            </Row>
           </TabPane>
         </Tabs>
       </Row>

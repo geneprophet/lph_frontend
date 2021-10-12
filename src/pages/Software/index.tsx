@@ -19,8 +19,23 @@ export default function Page() {
         </Col>
       </Row>
       <Row style={{marginTop:'2%'}}>
-        <Col md={20}>
-
+        <Col md={2} push={3}>
+          <p style={{fontSize:"x-large",fontWeight:"bolder"}}>Software:</p>
+        </Col>
+      </Row>
+      <Row style={{marginTop:'2%'}}>
+        <Col md={20} push={4} style={{fontWeight:200,fontSize:"large"}}>
+          <p>1. deTs</p>
+        </Col>
+      </Row>
+      <Row style={{marginTop:'2%'}}>
+        <Col md={2} push={3}>
+          <p style={{fontSize:"x-large",fontWeight:"bolder"}}>Database:</p>
+        </Col>
+      </Row>
+      <Row style={{marginTop:'2%'}}>
+        <Col md={20} push={4} style={{fontWeight:200,fontSize:"large"}}>
+          <p>1. CeDR Atlas: a knowledgebase of cellular drug response <a href={"https://ngdc.cncb.ac.cn/cedr"}>https://ngdc.cncb.ac.cn/cedr</a></p>
         </Col>
       </Row>
     </>

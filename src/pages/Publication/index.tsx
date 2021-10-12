@@ -5,8 +5,8 @@ import {Breadcrumb, Col, PageHeader, Row} from "antd";
 export default function Page() {
   return (
     <>
-      <Row>
-        <Col md={24} style={{marginLeft:'2%',marginTop:'2%'}}>
+      <Row className={styles.header}>
+        <Col md={9} style={{marginLeft:'2%',marginTop:'2%',fontWeight:600,fontFamily:'sans-serif'}}>
           <Breadcrumb>
             <Breadcrumb.Item><a href={'/home'}>Home</a></Breadcrumb.Item>
             <Breadcrumb.Item>
@@ -14,14 +14,13 @@ export default function Page() {
             </Breadcrumb.Item>
           </Breadcrumb>
         </Col>
+        <Col md={10}>
+          <p className={styles.title}>PUBLICATION</p>
+        </Col>
       </Row>
-      <PageHeader
-        className="site-page-header"
-        title="PUBLICATION"
-      />
-      <Row justify={'center'}>
+      <Row justify={'center'} style={{marginTop:'2%'}}>
         <Col md={18}>
-          <h1 className={styles.title}>2021</h1>
+          <h1 className={styles.year}>2021</h1>
           <p className={styles.publication}>1. Yin-Ying Wang#, Hongen Kang#, Tianyi Xu, Lili Hao, Yiming Bao*, Peilin Jia*. <a href={''}>CeDR Atlas: a knowledgebase of cellular drug response.</a> Nucleic Acids Research, 2022 (Accepted) </p>
         </Col>
       </Row>

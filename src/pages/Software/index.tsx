@@ -18,7 +18,7 @@ export default function Page() {
           <p className={styles.title}>SOFTWARE & DATABASE</p>
         </Col>
       </Row>
-      <Row>
+      <Row style={{marginTop:'2%'}}>
         <Col md={20}>
 
         </Col>

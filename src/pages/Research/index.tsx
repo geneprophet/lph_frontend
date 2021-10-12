@@ -5,8 +5,8 @@ import {Col,Row,PageHeader,Breadcrumb  } from "antd";
 export default function Page() {
   return (
     <>
-      <Row>
-        <Col md={24} style={{marginLeft:'2%',marginTop:'2%'}}>
+      <Row className={styles.header}>
+        <Col md={9} style={{marginLeft:'2%',marginTop:'2%',fontWeight:600,fontFamily:'sans-serif'}}>
           <Breadcrumb>
             <Breadcrumb.Item><a href={'/home'}>Home</a></Breadcrumb.Item>
             <Breadcrumb.Item>
@@ -14,12 +14,11 @@ export default function Page() {
             </Breadcrumb.Item>
           </Breadcrumb>
         </Col>
+        <Col md={10}>
+          <p className={styles.title}>RESEARCH</p>
+        </Col>
       </Row>
-      <PageHeader
-        className="site-page-header"
-        title="RESEARCH"
-      />
-      <Row justify={'center'}>
+      <Row justify={'center'} style={{marginTop:'2%'}}>
         <Col md={22}>
           <h2>Our research focuses on the following areas:</h2>
         </Col>

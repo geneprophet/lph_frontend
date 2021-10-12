@@ -9,7 +9,7 @@ export default function Page() {
       <Row className={styles.header}>
         <Col md={9} style={{marginLeft:'2%',marginTop:'2%',fontWeight:600,fontFamily:'sans-serif'}}>
           <Breadcrumb>
-            <Breadcrumb.Item><a onClick={()=>{history.push('/')}}>Home</a></Breadcrumb.Item>
+            <Breadcrumb.Item><a onClick={()=>{history.push('/home')}}>Home</a></Breadcrumb.Item>
             <Breadcrumb.Item>
               <a onClick={()=>{history.push('/contact')}}>Contact</a>
             </Breadcrumb.Item>

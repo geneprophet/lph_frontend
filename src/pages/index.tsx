@@ -3,7 +3,7 @@ import {Col, Row, Carousel, Typography, Timeline, List, Avatar, Divider, Menu, S
 import { ClockCircleOutlined } from '@ant-design/icons';
 import {LeftOutlined,RightOutlined}  from '@ant-design/icons';
 import React from "react";
-// import Photo1 from '../assets/party.jpg';
+// import Photo1 from '../public/party.jpg';
 const { Title ,Paragraph,Text } = Typography;
 export default function IndexPage() {
   const data = [

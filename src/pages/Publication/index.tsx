@@ -19,9 +19,10 @@ export default function Page() {
         className="site-page-header"
         title="PUBLICATION"
       />
-      <Row>
-        <Col md={20}>
-
+      <Row justify={'center'}>
+        <Col md={18}>
+          <h1 className={styles.title}>2021</h1>
+          <p className={styles.publication}>1. Yin-Ying Wang#, Hongen Kang#, Tianyi Xu, Lili Hao, Yiming Bao*, Peilin Jia*. <a href={''}>CeDR Atlas: a knowledgebase of cellular drug response.</a> Nucleic Acids Research, 2022 (Accepted) </p>
         </Col>
       </Row>
     </>

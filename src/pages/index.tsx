@@ -3,12 +3,28 @@ import {Col, Row, Carousel, Typography, Timeline, List, Avatar, Divider, Menu, S
 import { ClockCircleOutlined } from '@ant-design/icons';
 import {LeftOutlined,RightOutlined}  from '@ant-design/icons';
 import React from "react";
-// import Photo1 from '../public/party.jpg';
+// import Photo1 from '../assets/party.jpg';
 const { Title ,Paragraph,Text } = Typography;
 export default function IndexPage() {
-  const data = [
+  const events = [
     {
       title: 'Ant Design Title 1',
+      description:'',
+    },
+    {
+      title: 'Ant Design Title 2',
+    },
+    {
+      title: 'Ant Design Title 3',
+    },
+    {
+      title: 'Ant Design Title 4',
+    },
+  ];
+  const publications = [
+    {
+      title: 'Ant Design Title 1',
+      description:'',
     },
     {
       title: 'Ant Design Title 2',
@@ -60,7 +76,7 @@ export default function IndexPage() {
               <Col md={20}>
                 <List
                   itemLayout="horizontal"
-                  dataSource={data}
+                  dataSource={events}
                   renderItem={item => (
                     <List.Item>
                       <List.Item.Meta
@@ -83,7 +99,7 @@ export default function IndexPage() {
               <Col md={20}>
                 <List
                   itemLayout="horizontal"
-                  dataSource={data}
+                  dataSource={publications}
                   renderItem={item => (
                     <List.Item>
                       <List.Item.Meta

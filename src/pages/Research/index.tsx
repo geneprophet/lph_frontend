@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './index.less';
 import {Col,Row,PageHeader,Breadcrumb  } from "antd";
+import {history} from "@@/core/history";
 
 export default function Page() {
   return (
@@ -8,9 +9,9 @@ export default function Page() {
       <Row className={styles.header}>
         <Col md={9} style={{marginLeft:'2%',marginTop:'2%',fontWeight:600,fontFamily:'sans-serif'}}>
           <Breadcrumb>
-            <Breadcrumb.Item><a href={'/home'}>Home</a></Breadcrumb.Item>
+            <Breadcrumb.Item><a onClick={()=>{history.push('/')}}>Home</a></Breadcrumb.Item>
             <Breadcrumb.Item>
-              <a href={'/research'}>Research</a>
+              <a onClick={()=>{history.push('/research')}}>Research</a>
             </Breadcrumb.Item>
           </Breadcrumb>
         </Col>

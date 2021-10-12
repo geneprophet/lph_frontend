@@ -31,11 +31,6 @@ export default defineConfig({
           breadcrumbName: 'Software',
         },
         {
-          path: '/database',
-          component: '@/pages/Database',
-          breadcrumbName: 'Database',
-        },
-        {
           path: '/publication',
           component: '@/pages/Publication',
           breadcrumbName: 'Publication',

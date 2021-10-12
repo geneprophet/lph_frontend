@@ -7,7 +7,28 @@ import { history } from 'umi';
 const { Header, Content, Footer } = Layout;
 const Index = (props:any) => {
   const { scrollX, scrollY, scrollDirection } = useScroll();
-
+  const [selectKey, setSelectkey] = useState('1');
+  useEffect(() => {
+    if (
+      history.location.pathname.startsWith('/') ||
+      history.location.pathname.startsWith('/home')
+    ) {
+      setSelectkey('1');
+    } else if (history.location.pathname.startsWith('/research')) {
+      setSelectkey('2');
+    } else if (history.location.pathname.startsWith('/software')) {
+      setSelectkey('3');
+    } else if (history.location.pathname.startsWith('/publication')) {
+      setSelectkey('4');
+    } else if (history.location.pathname.startsWith('/member')) {
+      setSelectkey('5');
+    } else if (history.location.pathname.startsWith('/join')) {
+      setSelectkey('6');
+    } else if (history.location.pathname.startsWith('/contact')) {
+      setSelectkey('7');
+    }
+    // console.log(history.location.pathname);
+  }, [history.location]);
   return (
     <Row className={styles.container}>
       <Col md={24}>
@@ -18,8 +39,8 @@ const Index = (props:any) => {
                 <a style={{marginTop:'-10px',marginLeft:'-10px',lineHeight:'20px', fontSize:'18px', fontWeight: 'bold',color:'#4088b8',fontFamily:"Kaushan Script"}} href={'/home'}>Laboratory for Precision Health</a>
               </Col>
               <Col md={19}>
-                <Menu className={styles.menu} mode="horizontal" defaultSelectedKeys={['1']} inlineCollapsed={false}>
-                  <Menu.Item key="1" onClick={()=>{history.push('/home')}}>Home</Menu.Item>
+                <Menu className={styles.menu} mode="horizontal" defaultSelectedKeys={['1']} selectedKeys={[selectKey]} inlineCollapsed={false}>
+                  <Menu.Item key="1" onClick={()=>{history.push('/')}}>Home</Menu.Item>
                   <Menu.Item key="2" onClick={()=>{history.push('/research')}}>Research</Menu.Item>
                   <Menu.Item key="3" onClick={()=>{history.push('/software')}}>Software & Database</Menu.Item>
                   <Menu.Item key="4" onClick={()=>{history.push('/publication')}}>Publication</Menu.Item>

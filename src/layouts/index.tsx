@@ -35,7 +35,7 @@ const Index = (props:any) => {
           <Header className={styles.header} style={{opacity:(scrollY>=100) ? 0.8 : 1}}>
             <Row>
               <Col md={5} sm={10} style={{whiteSpace:"nowrap"}}>
-                <a style={{marginTop:'-10px',marginLeft:'-10px',lineHeight:'20px', fontSize:'18px', fontWeight: 'bold',color:'#4088b8',fontFamily:"Kaushan Script"}} href={'/home'}>Laboratory for Precision Health</a>
+                <a style={{marginTop:'-10px',marginLeft:'-10px',lineHeight:'20px', fontSize:'18px', fontWeight: 'bold',color:'#4088b8',fontFamily:"Kaushan Script"}} onClick={()=>{history.push('/home')}}>Laboratory for Precision Health</a>
               </Col>
               <Col md={19}>
                 <Menu className={styles.menu} mode="horizontal" selectedKeys={[selectKey]} inlineCollapsed={false}>

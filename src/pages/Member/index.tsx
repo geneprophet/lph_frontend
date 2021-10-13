@@ -1,9 +1,12 @@
 import React from 'react';
 import styles from './index.less';
-import {Breadcrumb, Col, PageHeader, Row, Image, Card, Tabs, Space} from "antd";
+import {Breadcrumb, Col, PageHeader, Row, Image, Card, Tabs, Space, Divider} from "antd";
 import PI from '../../assets/pi.jpg';
 import KHE from '../../assets/khe.jpg';
-import {history} from "@@/core/history";
+import WYY from '../../assets/wyy.jpg';
+import LTZ from '../../assets/ltz.jpg';
+import YN from '../../assets/yn.jpg';
+import {history} from "umi";
 const { Meta } = Card;
 const { TabPane } = Tabs;
 export default function Page() {
@@ -25,58 +28,103 @@ export default function Page() {
       <Row justify={'center'} style={{marginTop:'2%'}}>
         <Tabs defaultActiveKey="1" centered>
           <TabPane tab="ALL" key="1">
-            <Row justify={'space-around'}>
-                <Col md={4} onClick={()=>{window.open('http://www.big.cas.cn/yjdw_/kyxmz/index_84122.html?json=http://www.big.cas.cn/sourcedb_big_cas/zw/zjrc_/kyxmz/jbylsys/202011/t20201112_5748182.json','_blank')}}>
-                  <Card hoverable cover={<Image width={'100%'} preview={false} src={PI}></Image>}>
-                    <Meta style={{color:"black"}} title={<p className={styles.name}>Peilin Jia</p>} description={<p className={styles.keyword} style={{color:"black"}}>Principal Investigator</p>} />
-                  </Card>
-                </Col>
-                <Col md={4}>
-                  <Card cover={<Image width={'100%'} preview={false} src={KHE}></Image>}>
-                    <Meta style={{color:"black"}} title={<p className={styles.name}>Hongen Kang</p>} description={<p className={styles.keyword} style={{color:"black"}}>PhD Candidate</p>} />
-                  </Card>
-                </Col>
+            <Row justify={'center'}>
+              <Col md={18}>
+                <Row justify={'space-around'}>
+                  <Col md={4} onClick={()=>{window.open('http://www.big.cas.cn/yjdw_/kyxmz/index_84122.html?json=http://www.big.cas.cn/sourcedb_big_cas/zw/zjrc_/kyxmz/jbylsys/202011/t20201112_5748182.json','_blank')}}>
+                    <Card hoverable cover={<Image width={'100%'} preview={false} src={PI}></Image>}>
+                      <Meta style={{color:"black"}} title={<p className={styles.name}>Peilin Jia</p>} description={<p className={styles.keyword} style={{color:"black"}}>Principal Investigator</p>} />
+                    </Card>
+                  </Col>
+                  <Col md={4}>
+                    <Card cover={<Image width={'100%'} preview={false} src={WYY}></Image>}>
+                      <Meta style={{color:"black"}} title={<p className={styles.name}>Yin-Ying Wang</p>} description={<p className={styles.keyword} style={{color:"black"}}>Assistant Professor</p>} />
+                    </Card>
+                  </Col>
+                  <Col md={4}>
+                    <Card cover={<Image width={'100%'} preview={false} src={LTZ}></Image>}>
+                      <Meta style={{color:"black"}} title={<p className={styles.name}>Tianzi Liu</p>} description={<p className={styles.keyword} style={{color:"black"}}>Assistant Professor</p>} />
+                    </Card>
+                  </Col>
+                  <Col md={4}>
+                    <Card cover={<Image width={'100%'} preview={false} src={KHE}></Image>}>
+                      <Meta style={{color:"black"}} title={<p className={styles.name}>Hongen Kang</p>} description={<p className={styles.keyword} style={{color:"black"}}>PhD Candidate</p>} />
+                    </Card>
+                  </Col>
+                </Row>
+                <Divider style={{marginTop:'2%',marginBottom:'2%'}}/>
+                <Row justify={'space-around'}>
+                  <Col md={4}>
+                    <Card cover={<Image width={'100%'} preview={false} src={YN}></Image>}>
+                      <Meta style={{color:"black"}} title={<p className={styles.name}>Na Yuan</p>} description={<p className={styles.keyword} style={{color:"black"}}>Assistant Professor</p>} />
+                    </Card>
+                  </Col>
+                  <Col md={4}>
+                    <Card cover={<Image width={'100%'} preview={false} src={LTZ}></Image>}>
+                      <Meta style={{color:"black"}} title={<p className={styles.name}>Tianzi Liu</p>} description={<p className={styles.keyword} style={{color:"black"}}>Assistant Professor</p>} />
+                    </Card>
+                  </Col>
+                  <Col md={4}>
+                    <Card cover={<Image width={'100%'} preview={false} src={KHE}></Image>}>
+                      <Meta style={{color:"black"}} title={<p className={styles.name}>Hongen Kang</p>} description={<p className={styles.keyword} style={{color:"black"}}>PhD Candidate</p>} />
+                    </Card>
+                  </Col>
+                </Row>
+              </Col>
             </Row>
           </TabPane>
           <TabPane tab="PI" key="2">
             <Row justify={'space-around'}>
-              <Col md={4} onClick={()=>{window.open('http://www.big.cas.cn/yjdw_/kyxmz/index_84122.html?json=http://www.big.cas.cn/sourcedb_big_cas/zw/zjrc_/kyxmz/jbylsys/202011/t20201112_5748182.json','_blank')}}>
+              <Col md={6} onClick={()=>{window.open('http://www.big.cas.cn/yjdw_/kyxmz/index_84122.html?json=http://www.big.cas.cn/sourcedb_big_cas/zw/zjrc_/kyxmz/jbylsys/202011/t20201112_5748182.json','_blank')}}>
                 <Card hoverable cover={<Image width={'100%'} preview={false} src={PI}></Image>}>
                   <Meta style={{color:"black"}} title={<p className={styles.name}>Peilin Jia</p>} description={<p className={styles.keyword} style={{color:"black"}}>Principal Investigator</p>} />
-                </Card>
-              </Col>
-              <Col md={4}>
-                <Card cover={<Image width={'100%'} preview={false} src={KHE}></Image>}>
-                  <Meta style={{color:"black"}} title={<p className={styles.name}>Hongen Kang</p>} description={<p className={styles.keyword} style={{color:"black"}}>PhD Candidate</p>} />
                 </Card>
               </Col>
             </Row>
           </TabPane>
           <TabPane tab="RESEARCH STAFF" key="3">
-            <Row justify={'space-around'}>
-              <Col md={4} onClick={()=>{window.open('http://www.big.cas.cn/yjdw_/kyxmz/index_84122.html?json=http://www.big.cas.cn/sourcedb_big_cas/zw/zjrc_/kyxmz/jbylsys/202011/t20201112_5748182.json','_blank')}}>
-                <Card hoverable cover={<Image width={'100%'} preview={false} src={PI}></Image>}>
-                  <Meta style={{color:"black"}} title={<p className={styles.name}>Peilin Jia</p>} description={<p className={styles.keyword} style={{color:"black"}}>Principal Investigator</p>} />
-                </Card>
-              </Col>
-              <Col md={4}>
-                <Card cover={<Image width={'100%'} preview={false} src={KHE}></Image>}>
-                  <Meta style={{color:"black"}} title={<p className={styles.name}>Hongen Kang</p>} description={<p className={styles.keyword} style={{color:"black"}}>PhD Candidate</p>} />
-                </Card>
+            <Row justify={'center'}>
+              <Col md={18}>
+                <Row justify={'space-around'}>
+                  <Col md={4}>
+                    <Card cover={<Image width={'100%'} preview={false} src={WYY}></Image>}>
+                      <Meta style={{color:"black"}} title={<p className={styles.name}>Yin-Ying Wang</p>} description={<p className={styles.keyword} style={{color:"black"}}>Assistant Professor</p>} />
+                    </Card>
+                  </Col>
+                  <Col md={4}>
+                    <Card cover={<Image width={'100%'} preview={false} src={LTZ}></Image>}>
+                      <Meta style={{color:"black"}} title={<p className={styles.name}>Tianzi Liu</p>} description={<p className={styles.keyword} style={{color:"black"}}>Assistant Professor</p>} />
+                    </Card>
+                  </Col>
+                </Row>
               </Col>
             </Row>
           </TabPane>
           <TabPane tab="STUDENTS" key="4">
-            <Row justify={'space-around'}>
-              <Col md={4}>
-                <Card hoverable cover={<Image width={'100%'} preview={false} src={PI}></Image>}>
-                  <Meta style={{color:"black"}} title={<p className={styles.name}>Peilin Jia</p>} description={<p className={styles.keyword} style={{color:"black"}}>Principal Investigator</p>} />
-                </Card>
-              </Col>
-              <Col md={4}>
-                <Card hoverable cover={<Image width={'100%'} preview={false} src={KHE}></Image>}>
-                  <Meta style={{color:"black"}} title={<p className={styles.name}>Hongen Kang</p>} description={<p className={styles.keyword} style={{color:"black"}}>PhD Candidate</p>} />
-                </Card>
+            <Row justify={'center'}>
+              <Col md={18}>
+                <Row justify={'space-around'}>
+                  <Col md={4} onClick={()=>{window.open('http://www.big.cas.cn/yjdw_/kyxmz/index_84122.html?json=http://www.big.cas.cn/sourcedb_big_cas/zw/zjrc_/kyxmz/jbylsys/202011/t20201112_5748182.json','_blank')}}>
+                    <Card hoverable cover={<Image width={'100%'} preview={false} src={PI}></Image>}>
+                      <Meta style={{color:"black"}} title={<p className={styles.name}>Peilin Jia</p>} description={<p className={styles.keyword} style={{color:"black"}}>Principal Investigator</p>} />
+                    </Card>
+                  </Col>
+                  <Col md={4}>
+                    <Card cover={<Image width={'100%'} preview={false} src={WYY}></Image>}>
+                      <Meta style={{color:"black"}} title={<p className={styles.name}>Yin-Ying Wang</p>} description={<p className={styles.keyword} style={{color:"black"}}>Assistant Professor</p>} />
+                    </Card>
+                  </Col>
+                  <Col md={4}>
+                    <Card cover={<Image width={'100%'} preview={false} src={LTZ}></Image>}>
+                      <Meta style={{color:"black"}} title={<p className={styles.name}>Tianzi Liu</p>} description={<p className={styles.keyword} style={{color:"black"}}>Assistant Professor</p>} />
+                    </Card>
+                  </Col>
+                  <Col md={4}>
+                    <Card cover={<Image width={'100%'} preview={false} src={KHE}></Image>}>
+                      <Meta style={{color:"black"}} title={<p className={styles.name}>Hongen Kang</p>} description={<p className={styles.keyword} style={{color:"black"}}>PhD Candidate</p>} />
+                    </Card>
+                  </Col>
+                </Row>
               </Col>
             </Row>
           </TabPane>

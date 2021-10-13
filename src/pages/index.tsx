@@ -8,17 +8,28 @@ const { Title ,Paragraph,Text } = Typography;
 export default function IndexPage() {
   const events = [
     {
-      title: 'Ant Design Title 1',
-      description:'',
+      title: 'CeDR publiched!',
+      description:'CeDR Atlas: a knowledgebase of cellular drug response',
+      link:'https://academic.oup.com/nar/advance-article/doi/10.1093/nar/gkab897/6389514?searchresult=1',
+      date:'11 October 2021'
     },
     {
-      title: 'Ant Design Title 2',
+      title: 'Welcome Hongen Kang, Xiuli Zhu, Mingqiu Wu join the lab!',
+      description:'PhD Candidate: Hongen Kang, MS Candidate: Xiuli Zhu and Mingqiu Wu',
+      link:'',
+      date:'1 September 2021'
     },
     {
-      title: 'Ant Design Title 3',
+      title: 'CeDR online!',
+      description:'The website service of CeDR open to the world after technical test.',
+      link:'https://ngdc.cncb.ac.cn/cedr',
+      date:'30 June 2021'
     },
     {
-      title: 'Ant Design Title 4',
+      title: 'Welcome Yin-Ying Wang join the lab as a assistant professor',
+      description:'Yin-Ying Wang is ',
+      link:'',
+      date:'1 March 2021'
     },
   ];
   const publications = [
@@ -79,17 +90,17 @@ export default function IndexPage() {
                   dataSource={events}
                   renderItem={item => (
                     <List.Item>
+                      {item.date}
                       <List.Item.Meta
                         avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />}
-                        title={<a href="https://ant.design">{item.title}</a>}
-                        description="Ant Design, a design language for background applications, is refined by Ant UED Team"
+                        title={<a href={item.link} target={'_blank'}>{item.title}</a>}
+                        description={<p>{item.description}</p>}
                       />
                     </List.Item>
                   )}
                 />
               </Col>
             </Row>
-
           </Col>
           <Col md={10} push={2}>
             <Row justify={'center'}>

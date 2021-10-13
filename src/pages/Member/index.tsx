@@ -17,6 +17,7 @@ import WYY from '../../assets/wyy.jpg';
 import LTZ from '../../assets/ltz.jpg';
 import YN from '../../assets/yn.jpg';
 import LSQ from '../../assets/lsq.jpg';
+// import GXJ from '../../assets/gxj.jpg';
 import { history } from 'umi';
 const { Meta } = Card;
 const { TabPane } = Tabs;
@@ -199,18 +200,18 @@ export default function Page() {
                   <Col md={4}>
                     <Card
                       cover={
-                        <Image width={'100%'} preview={false} src={LTZ}></Image>
+                        <Image width={'100%'} preview={false} src={KHE}></Image>
                       }
                     >
                       <Meta
                         style={{ color: 'black' }}
-                        title={<p className={styles.name}>Tianzi Liu</p>}
+                        title={<p className={styles.name}>Hongen Kang</p>}
                         description={
                           <p
                             className={styles.keyword}
                             style={{ color: 'black' }}
                           >
-                            Assistant Professor
+                            PhD Candidate
                           </p>
                         }
                       />
@@ -219,12 +220,12 @@ export default function Page() {
                   <Col md={4}>
                     <Card
                       cover={
-                        <Image width={'100%'} preview={false} src={KHE}></Image>
+                        <Image width={'100%'} preview={false} src={LSQ}></Image>
                       }
                     >
                       <Meta
                         style={{ color: 'black' }}
-                        title={<p className={styles.name}>Hongen Kang</p>}
+                        title={<p className={styles.name}>Xingjian Gao</p>}
                         description={
                           <p
                             className={styles.keyword}
@@ -322,35 +323,6 @@ export default function Page() {
             <Row justify={'center'}>
               <Col md={18}>
                 <Row justify={'space-around'}>
-                  <Col
-                    md={4}
-                    onClick={() => {
-                      window.open(
-                        'http://www.big.cas.cn/yjdw_/kyxmz/index_84122.html?json=http://www.big.cas.cn/sourcedb_big_cas/zw/zjrc_/kyxmz/jbylsys/202011/t20201112_5748182.json',
-                        '_blank',
-                      );
-                    }}
-                  >
-                    <Card
-                      hoverable
-                      cover={
-                        <Image width={'100%'} preview={false} src={PI}></Image>
-                      }
-                    >
-                      <Meta
-                        style={{ color: 'black' }}
-                        title={<p className={styles.name}>Peilin Jia</p>}
-                        description={
-                          <p
-                            className={styles.keyword}
-                            style={{ color: 'black' }}
-                          >
-                            Principal Investigator
-                          </p>
-                        }
-                      />
-                    </Card>
-                  </Col>
                   <Col md={4}>
                     <Card
                       cover={

@@ -86,15 +86,57 @@ export default function Page() {
           <List
             itemLayout="horizontal"
             dataSource={publications}
-            renderItem={item => (
-              <List.Item style={{fontWeight:'bold'}}>
-                <List.Item.Meta
-                  // avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />}
-                  title={<p className={styles.publication} style={{fontSize:"larger"}}>{item.index}. {item.authors}.({item.year}) <a href={item.link} target={'_blank'} style={{fontSize:"x-large",color:'#0099ff'}}>{item.title}. </a> <span style={{fontStyle:'italic'}}>{item.journal}.</span></p>}
-                  // description={<p style={{color:"black"}}>{item.description}</p>}
-                />
-              </List.Item>
-            )}
+            renderItem={item => {
+              if (item.year=='2021'){
+                return(<List.Item style={{fontWeight:'bold'}}>
+                  <List.Item.Meta
+                    // avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />}
+                    title={<p className={styles.publication} style={{fontSize:"larger"}}>{item.index}. {item.authors}.({item.year}) <a href={item.link} target={'_blank'} style={{fontSize:"x-large",color:'#0099ff'}}>{item.title}. </a> <span style={{fontStyle:'italic'}}>{item.journal}.</span></p>}
+                    // description={<p style={{color:"black"}}>{item.description}</p>}
+                  />
+                </List.Item>)
+              }
+            }}
+          />
+        </Col>
+      </Row>
+      <Row justify={'center'} style={{marginTop:'2%'}}>
+        <Col md={18}>
+          <h1 className={styles.year}>2020</h1>
+          <List
+            itemLayout="horizontal"
+            dataSource={publications}
+            renderItem={item => {
+              if (item.year=='2020'){
+                return(<List.Item style={{fontWeight:'bold'}}>
+                  <List.Item.Meta
+                    // avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />}
+                    title={<p className={styles.publication} style={{fontSize:"larger"}}>{item.index}. {item.authors}.({item.year}) <a href={item.link} target={'_blank'} style={{fontSize:"x-large",color:'#0099ff'}}>{item.title}. </a> <span style={{fontStyle:'italic'}}>{item.journal}.</span></p>}
+                    // description={<p style={{color:"black"}}>{item.description}</p>}
+                  />
+                </List.Item>)
+              }
+            }}
+          />
+        </Col>
+      </Row>
+      <Row justify={'center'} style={{marginTop:'2%'}}>
+        <Col md={18}>
+          <h1 className={styles.year}>2019</h1>
+          <List
+            itemLayout="horizontal"
+            dataSource={publications}
+            renderItem={item => {
+              if (item.year=='2019'){
+                return(<List.Item style={{fontWeight:'bold'}}>
+                  <List.Item.Meta
+                    // avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />}
+                    title={<p className={styles.publication} style={{fontSize:"larger"}}>{item.index}. {item.authors}.({item.year}) <a href={item.link} target={'_blank'} style={{fontSize:"x-large",color:'#0099ff'}}>{item.title}. </a> <span style={{fontStyle:'italic'}}>{item.journal}.</span></p>}
+                    // description={<p style={{color:"black"}}>{item.description}</p>}
+                  />
+                </List.Item>)
+              }
+            }}
           />
         </Col>
       </Row>

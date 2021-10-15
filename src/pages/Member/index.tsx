@@ -17,7 +17,8 @@ import WYY from '../../assets/wyy.jpg';
 import LTZ from '../../assets/ltz.jpg';
 import YN from '../../assets/yn.jpg';
 import LSQ from '../../assets/lsq.jpg';
-// import GXJ from '../../assets/gxj.jpg';
+import GXJ from '../../assets/gxj.jpg';
+import WMQ from '../../assets/wmq.jpg';
 import { history } from 'umi';
 const { Meta } = Card;
 const { TabPane } = Tabs;
@@ -63,10 +64,11 @@ export default function Page() {
         <Tabs defaultActiveKey="1" centered>
           <TabPane tab="ALL" key="1">
             <Row justify={'center'}>
-              <Col md={18}>
+              <Col md={18} sm={24}>
                 <Row justify={'space-around'}>
                   <Col
                     md={4}
+                    sm={6}
                     onClick={() => {
                       window.open(
                         'http://www.big.cas.cn/yjdw_/kyxmz/index_84122.html?json=http://www.big.cas.cn/sourcedb_big_cas/zw/zjrc_/kyxmz/jbylsys/202011/t20201112_5748182.json',
@@ -114,7 +116,7 @@ export default function Page() {
                       />
                     </Card>
                   </Col>
-                  <Col md={4}>
+                  <Col md={4} sm={6}>
                     <Card
                       cover={
                         <Image width={'100%'} preview={false} src={LTZ}></Image>
@@ -134,7 +136,7 @@ export default function Page() {
                       />
                     </Card>
                   </Col>
-                  <Col md={4}>
+                  <Col md={4} sm={6}>
                     <Card
                       cover={
                         <Image width={'100%'} preview={false} src={YN}></Image>
@@ -200,18 +202,18 @@ export default function Page() {
                   <Col md={4}>
                     <Card
                       cover={
-                        <Image width={'100%'} preview={false} src={KHE}></Image>
+                        <Image width={'100%'} preview={false} src={WMQ}></Image>
                       }
                     >
                       <Meta
                         style={{ color: 'black' }}
-                        title={<p className={styles.name}>Hongen Kang</p>}
+                        title={<p className={styles.name}>Mingqiu Wu</p>}
                         description={
                           <p
                             className={styles.keyword}
                             style={{ color: 'black' }}
                           >
-                            PhD Candidate
+                            MS Candidate
                           </p>
                         }
                       />
@@ -220,7 +222,7 @@ export default function Page() {
                   <Col md={4}>
                     <Card
                       cover={
-                        <Image width={'100%'} preview={false} src={LSQ}></Image>
+                        <Image width={'100%'} preview={false} src={GXJ}></Image>
                       }
                     >
                       <Meta
@@ -315,6 +317,26 @@ export default function Page() {
                       />
                     </Card>
                   </Col>
+                  <Col md={4} sm={6}>
+                    <Card
+                      cover={
+                        <Image width={'100%'} preview={false} src={YN}></Image>
+                      }
+                    >
+                      <Meta
+                        style={{ color: 'black' }}
+                        title={<p className={styles.name}>Na Yuan</p>}
+                        description={
+                          <p
+                            className={styles.keyword}
+                            style={{ color: 'black' }}
+                          >
+                            Assistant Professor
+                          </p>
+                        }
+                      />
+                    </Card>
+                  </Col>
                 </Row>
               </Col>
             </Row>
@@ -326,52 +348,72 @@ export default function Page() {
                   <Col md={4}>
                     <Card
                       cover={
-                        <Image width={'100%'} preview={false} src={WYY}></Image>
-                      }
-                    >
-                      <Meta
-                        style={{ color: 'black' }}
-                        title={<p className={styles.name}>Yin-Ying Wang</p>}
-                        description={
-                          <p
-                            className={styles.keyword}
-                            style={{ color: 'black' }}
-                          >
-                            Assistant Professor
-                          </p>
-                        }
-                      />
-                    </Card>
-                  </Col>
-                  <Col md={4}>
-                    <Card
-                      cover={
-                        <Image width={'100%'} preview={false} src={LTZ}></Image>
-                      }
-                    >
-                      <Meta
-                        style={{ color: 'black' }}
-                        title={<p className={styles.name}>Tianzi Liu</p>}
-                        description={
-                          <p
-                            className={styles.keyword}
-                            style={{ color: 'black' }}
-                          >
-                            Assistant Professor
-                          </p>
-                        }
-                      />
-                    </Card>
-                  </Col>
-                  <Col md={4}>
-                    <Card
-                      cover={
                         <Image width={'100%'} preview={false} src={KHE}></Image>
                       }
                     >
                       <Meta
                         style={{ color: 'black' }}
                         title={<p className={styles.name}>Hongen Kang</p>}
+                        description={
+                          <p
+                            className={styles.keyword}
+                            style={{ color: 'black' }}
+                          >
+                            PhD Candidate
+                          </p>
+                        }
+                      />
+                    </Card>
+                  </Col>
+                  <Col md={4}>
+                    <Card
+                      cover={
+                        <Image width={'100%'} preview={false} src={LSQ}></Image>
+                      }
+                    >
+                      <Meta
+                        style={{ color: 'black' }}
+                        title={<p className={styles.name}>Shiqi Lin</p>}
+                        description={
+                          <p
+                            className={styles.keyword}
+                            style={{ color: 'black' }}
+                          >
+                            PhD Candidate
+                          </p>
+                        }
+                      />
+                    </Card>
+                  </Col>
+                  <Col md={4}>
+                    <Card
+                      cover={
+                        <Image width={'100%'} preview={false} src={WMQ}></Image>
+                      }
+                    >
+                      <Meta
+                        style={{ color: 'black' }}
+                        title={<p className={styles.name}>Mingqiu Wu</p>}
+                        description={
+                          <p
+                            className={styles.keyword}
+                            style={{ color: 'black' }}
+                          >
+                            MS Candidate
+                          </p>
+                        }
+                      />
+                    </Card>
+                  </Col>
+                  <Col md={4}>
+                    <Card
+                      cover={
+                        <Image width={'100%'} preview={false} src={GXJ}></Image>
+                      }
+                    >
+                      <Meta
+                        style={{ color: 'black' }}
+                        title={<p className={styles.name}>Xingjian Gao</p>}
                         description={
                           <p
                             className={styles.keyword}

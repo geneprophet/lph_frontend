@@ -20,6 +20,12 @@ export default function IndexPage() {
       date:'1 September 2021'
     },
     {
+      title: 'Peilin Jia and Yin-Ying Wang are invited to report in the NCCBB 2021',
+      description:'Peilin Jia and Yin-Ying Wang are invited to report in The 7th National Conference on Computational Biology and Bioinformatics. Hongen Kang get the Excellent poster.',
+      link:'http://interdisciplinarysciences.org/conference/',
+      date:'16-18 July 2021'
+    },
+    {
       title: 'CeDR online!',
       description:'The website service of CeDR open to the world after technical test.',
       link:'https://ngdc.cncb.ac.cn/cedr',
@@ -34,18 +40,54 @@ export default function IndexPage() {
   ];
   const publications = [
     {
-      title: 'Ant Design Title 1',
-      description:'',
+      authors:'Yin-Ying Wang#, Hongen Kang#, Tianyi Xu, Lili Hao, Yiming Bao*, Peilin Jia*',
+      title: ' CeDR Atlas: a knowledgebase of cellular drug response',
+      journal:'Nucleic Acids Research',
+      year:'2021',
+      link:'https://academic.oup.com/nar/advance-article/doi/10.1093/nar/gkab897/6389514?login=true'
     },
     {
-      title: 'Ant Design Title 2',
+      authors:'Pei G, Hu R, Dai Y, Manuel AM, Zhao Z*, Jia P*',
+      title: 'Predicting regulatory variants using a dense epigenomic mapped CNN model elucidated the molecular basis of trait-tissue associations',
+      journal:'Nucleic Acids Research',
+      year:'2021',
+      link:''
     },
     {
-      title: 'Ant Design Title 3',
+      authors:'Dai Y, Hu R, Manuel AM, Liu A, Jia P*, Zhao Z*',
+      title: 'CSEA-DB: An omnibus for human complex trait and cell type associations',
+      journal:'Nucleic Acids Research',
+      year:'2021',
+      link:''
     },
     {
-      title: 'Ant Design Title 4',
+      authors:'Jia P, Dai Y, Hu R, Pei G, Manuel A, Zhao Z',
+      title: 'TSEA-DB: A trait-tissue association map for human complex traits and diseases',
+      journal:'Nucleic Acids Research',
+      year:'2020',
+      link:''
     },
+    {
+      authors:'Pei G, Hu R, Dai Y, Zhao Z*, Jia P*',
+      title: 'Decoding whole-genome mutational signatures in 37 human pan-cancers by denoising sparse autoencoder neural network',
+      journal:'Oncogene',
+      year:'2020',
+      link:''
+    },
+    {
+      authors:'Jia P, Pei G, Zhao Z',
+      title: 'CNet: A multi-omics approach to detecting clinically associated, combinatory genomic signatures',
+      journal:'Bioinformatics',
+      year:'2019',
+      link:''
+    },
+    {
+      authors:'Pei G, Dai, Y, Zhao Z*, Jia P*',
+      title: 'deTS: tissue-specific enrichment analysis to decode tissue specificity',
+      journal:'Bioinformatics',
+      year:'2019',
+      link:''
+    }
   ];
   return (
     <div>
@@ -78,23 +120,24 @@ export default function IndexPage() {
           </Paragraph>
         </Col>
       </Row>
+      <Divider/>
       <Row style={{marginTop:'40px'}}>
-          <Col md={10} push={2}>
-            <Row justify={'center'}>
+          <Col md={8} push={2}>
+            <Row justify={'center'} className={styles.secondtitle}>
               <Title level={2}>Recent Events</Title>
             </Row>
-            <Row justify={'center'}>
+            <Row justify={'center'} style={{height:'400px',overflowY:"scroll"}}>
               <Col md={20}>
                 <List
                   itemLayout="horizontal"
                   dataSource={events}
                   renderItem={item => (
-                    <List.Item>
+                    <List.Item style={{fontFamily:'Helvetica',fontSize:"large"}}>
                       {item.date}
                       <List.Item.Meta
-                        avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />}
-                        title={<a href={item.link} target={'_blank'}>{item.title}</a>}
-                        description={<p>{item.description}</p>}
+                        // avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />}
+                        title={<a href={item.link} target={'_blank'} style={{fontSize:"x-large",color:'#190d99'}}>{item.title}</a>}
+                        description={<p style={{color:"black"}}>{item.description}</p>}
                       />
                     </List.Item>
                   )}
@@ -102,21 +145,21 @@ export default function IndexPage() {
               </Col>
             </Row>
           </Col>
-          <Col md={10} push={2}>
-            <Row justify={'center'}>
+          <Col md={12} push={2}>
+            <Row justify={'center'} className={styles.secondtitle}>
               <Title level={2}>Star Publications</Title>
             </Row>
-            <Row justify={'center'}>
+            <Row justify={'center'} style={{height:'400px',overflowY:"scroll"}}>
               <Col md={20}>
                 <List
                   itemLayout="horizontal"
                   dataSource={publications}
                   renderItem={item => (
-                    <List.Item>
+                    <List.Item style={{fontWeight:'bold'}}>
                       <List.Item.Meta
-                        avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />}
-                        title={<a href="https://ant.design">{item.title}</a>}
-                        description="Ant Design, a design language for background applications, is refined by Ant UED Team"
+                        // avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />}
+                        title={<p style={{fontSize:"larger"}}>{item.authors}.({item.year}) <a href={item.link} target={'_blank'} style={{fontSize:"x-large",color:'#0099ff'}}>{item.title}. </a> <span style={{fontStyle:'italic'}}>{item.journal}.</span></p>}
+                        // description={<p style={{color:"black"}}>{item.description}</p>}
                       />
                     </List.Item>
                   )}

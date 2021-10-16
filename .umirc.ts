@@ -53,4 +53,6 @@ export default defineConfig({
       ]},
   ],
   fastRefresh: {},
+  // ssr: {},
+  // exportStatic: { htmlSuffix: true }
 });

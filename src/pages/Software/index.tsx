@@ -84,8 +84,8 @@ export default function Page() {
           <p style={{fontSize:"x-large",fontWeight:"bolder"}}>Software:</p>
         </Col>
       </Row>
-      <Row style={{marginTop:'2%'}}>
-        <Col md={20} push={4} style={{fontWeight:200,fontSize:"large"}}>
+      <Row style={{marginTop:'2%'}} >
+        <Col md={17} push={4} style={{fontWeight:200,fontSize:"large"}}>
           <List
             itemLayout="horizontal"
             dataSource={software}
@@ -106,7 +106,7 @@ export default function Page() {
         </Col>
       </Row>
       <Row style={{marginTop:'2%'}}>
-        <Col md={20} push={4} style={{fontWeight:200,fontSize:"large"}}>
+        <Col md={17} push={4} style={{fontWeight:200,fontSize:"large"}}>
           <List
             itemLayout="horizontal"
             dataSource={database}

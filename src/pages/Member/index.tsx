@@ -67,8 +67,8 @@ export default function Page() {
               <Col md={18} sm={24}>
                 <Row justify={'space-around'}>
                   <Col
-                    md={4}
-                    sm={6}
+                    // md={4}
+                    flex={'230px'}
                     onClick={() => {
                       window.open(
                         'http://www.big.cas.cn/yjdw_/kyxmz/index_84122.html?json=http://www.big.cas.cn/sourcedb_big_cas/zw/zjrc_/kyxmz/jbylsys/202011/t20201112_5748182.json',
@@ -96,7 +96,7 @@ export default function Page() {
                       />
                     </Card>
                   </Col>
-                  <Col md={4} sm={6}>
+                  <Col flex={'230px'}>
                     <Card
                       cover={
                         <Image width={'100%'} preview={false} src={WYY}></Image>
@@ -116,7 +116,7 @@ export default function Page() {
                       />
                     </Card>
                   </Col>
-                  <Col md={4} sm={6}>
+                  <Col flex={'230px'}>
                     <Card
                       cover={
                         <Image width={'100%'} preview={false} src={LTZ}></Image>
@@ -136,7 +136,7 @@ export default function Page() {
                       />
                     </Card>
                   </Col>
-                  <Col md={4} sm={6}>
+                  <Col flex={'230px'}>
                     <Card
                       cover={
                         <Image width={'100%'} preview={false} src={YN}></Image>
@@ -159,7 +159,7 @@ export default function Page() {
                 </Row>
                 <Divider style={{ marginTop: '2%', marginBottom: '2%' }} />
                 <Row justify={'space-around'}>
-                  <Col md={4}>
+                  <Col flex={'230px'}>
                     <Card
                       cover={
                         <Image width={'100%'} preview={false} src={KHE}></Image>
@@ -179,7 +179,7 @@ export default function Page() {
                       />
                     </Card>
                   </Col>
-                  <Col md={4}>
+                  <Col flex={'230px'}>
                     <Card
                       cover={
                         <Image width={'100%'} preview={false} src={LSQ}></Image>
@@ -199,7 +199,7 @@ export default function Page() {
                       />
                     </Card>
                   </Col>
-                  <Col md={4}>
+                  <Col flex={'230px'}>
                     <Card
                       cover={
                         <Image width={'100%'} preview={false} src={WMQ}></Image>
@@ -219,7 +219,7 @@ export default function Page() {
                       />
                     </Card>
                   </Col>
-                  <Col md={4}>
+                  <Col flex={'230px'}>
                     <Card
                       cover={
                         <Image width={'100%'} preview={false} src={GXJ}></Image>
@@ -277,7 +277,7 @@ export default function Page() {
             <Row justify={'center'}>
               <Col md={18}>
                 <Row justify={'space-around'}>
-                  <Col md={4}>
+                  <Col flex={'230px'}>
                     <Card
                       cover={
                         <Image width={'100%'} preview={false} src={WYY}></Image>
@@ -297,7 +297,7 @@ export default function Page() {
                       />
                     </Card>
                   </Col>
-                  <Col md={4}>
+                  <Col flex={'230px'}>
                     <Card
                       cover={
                         <Image width={'100%'} preview={false} src={LTZ}></Image>
@@ -317,7 +317,7 @@ export default function Page() {
                       />
                     </Card>
                   </Col>
-                  <Col md={4} sm={6}>
+                  <Col flex={'230px'}>
                     <Card
                       cover={
                         <Image width={'100%'} preview={false} src={YN}></Image>
@@ -345,7 +345,7 @@ export default function Page() {
             <Row justify={'center'}>
               <Col md={18}>
                 <Row justify={'space-around'}>
-                  <Col md={4}>
+                  <Col flex={'230px'}>
                     <Card
                       cover={
                         <Image width={'100%'} preview={false} src={KHE}></Image>
@@ -365,7 +365,7 @@ export default function Page() {
                       />
                     </Card>
                   </Col>
-                  <Col md={4}>
+                  <Col flex={'230px'}>
                     <Card
                       cover={
                         <Image width={'100%'} preview={false} src={LSQ}></Image>
@@ -385,7 +385,7 @@ export default function Page() {
                       />
                     </Card>
                   </Col>
-                  <Col md={4}>
+                  <Col flex={'230px'}>
                     <Card
                       cover={
                         <Image width={'100%'} preview={false} src={WMQ}></Image>
@@ -405,7 +405,7 @@ export default function Page() {
                       />
                     </Card>
                   </Col>
-                  <Col md={4}>
+                  <Col flex={'230px'}>
                     <Card
                       cover={
                         <Image width={'100%'} preview={false} src={GXJ}></Image>

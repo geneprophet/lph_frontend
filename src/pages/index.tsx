@@ -95,16 +95,16 @@ export default function IndexPage() {
         <Col md={24}>
           <Carousel autoplay arrows={true} prevArrow={<LeftOutlined />} nextArrow={<RightOutlined />}>
             <div>
-              <h1 className={styles.contentStyle}>1</h1>
+              <h1 className={styles.contentStyle1}></h1>
             </div>
             <div>
-              <h1 className={styles.contentStyle}>2</h1>
+              <h1 className={styles.contentStyle2}></h1>
             </div>
             <div>
-              <h1 className={styles.contentStyle}>3</h1>
+              <h1 className={styles.contentStyle3}></h1>
             </div>
             <div>
-              <h1 className={styles.contentStyle}>4</h1>
+              <h1 className={styles.contentStyle4}></h1>
             </div>
           </Carousel>
         </Col>
@@ -112,7 +112,7 @@ export default function IndexPage() {
       <Row justify={"center"} style={{marginTop:'20px'}}>
         <Col md={18}>
           <Paragraph>
-            <Text style={{fontSize:'large'}}>
+            <Text style={{fontSize:'x-large'}}>
               &nbsp;&nbsp;&nbsp;&nbsp;Welcome to the <span style={{fontWeight:"bold"}}>Laboratory for Precision Health</span>.
               Our lab is part of the  CAS Key Laboratory of Genomic and Precision Medicine and <a href={"https://ngdc.cncb.ac.cn/"} target={'_blank'}>National Genomics Data Center</a> at <a href={"http://www.big.ac.cn/"} target={'_blank'}>Beijing Institute of Genomics, Chinese Academy of Sciences/China National Center for Bioinformation</a>.
               Our research focuses on developing computational approaches for genetics and genomics studies and fine mapping genetic variants and genes associated with human complex diseases. We are particularly interested in Artificial intelligence (AI) approaches in analyzing biological data.
@@ -126,7 +126,7 @@ export default function IndexPage() {
             <Row justify={'center'} className={styles.secondtitle}>
               <Title level={2}>Recent Events</Title>
             </Row>
-            <Row justify={'center'} style={{height:'400px',overflowY:"scroll"}}>
+            <Row justify={'center'} style={{height:'600px',overflowY:"scroll"}}>
               <Col md={20}>
                 <List
                   itemLayout="horizontal"
@@ -149,7 +149,7 @@ export default function IndexPage() {
             <Row justify={'center'} className={styles.secondtitle}>
               <Title level={2}>Star Publications</Title>
             </Row>
-            <Row justify={'center'} style={{height:'400px',overflowY:"scroll"}}>
+            <Row justify={'center'} style={{height:'600px',overflowY:"scroll"}}>
               <Col md={20}>
                 <List
                   itemLayout="horizontal"

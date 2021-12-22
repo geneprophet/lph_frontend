@@ -8,7 +8,7 @@ const { Title ,Paragraph,Text } = Typography;
 export default function IndexPage() {
   const events = [
     {
-      title: 'CeDR publiched!',
+      title: 'CeDR published!',
       description:'CeDR Atlas: a knowledgebase of cellular drug response',
       link:'https://academic.oup.com/nar/advance-article/doi/10.1093/nar/gkab897/6389514?searchresult=1',
       date:'11 October 2021'
@@ -93,7 +93,7 @@ export default function IndexPage() {
     <div>
       <Row>
         <Col md={24}>
-          <Carousel autoplay arrows={true} prevArrow={<LeftOutlined />} nextArrow={<RightOutlined />}>
+          <Carousel autoplay arrows prevArrow={<LeftOutlined />} nextArrow={<RightOutlined />}>
             <div>
               <h1 className={styles.contentStyle1}></h1>
             </div>

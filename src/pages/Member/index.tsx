@@ -19,6 +19,8 @@ import YN from '../../assets/yn.jpg';
 import LSQ from '../../assets/lsq.jpg';
 import GXJ from '../../assets/gxj.jpg';
 import WMQ from '../../assets/wmq.jpg';
+import ZXL from '../../assets/zxl.jpg';
+import LH from '../../assets/lh.jpg';
 import { history } from 'umi';
 const { Meta } = Card;
 const { TabPane } = Tabs;
@@ -99,12 +101,12 @@ export default function Page() {
                   <Col flex={'230px'}>
                     <Card
                       cover={
-                        <Image width={'100%'} preview={false} src={WYY}></Image>
+                        <Image width={'100%'} preview={false} src={LTZ}></Image>
                       }
                     >
                       <Meta
                         style={{ color: 'black' }}
-                        title={<p className={styles.name}>Yin-Ying Wang</p>}
+                        title={<p className={styles.name}>Tianzi Liu</p>}
                         description={
                           <p
                             className={styles.keyword}
@@ -119,12 +121,12 @@ export default function Page() {
                   <Col flex={'230px'}>
                     <Card
                       cover={
-                        <Image width={'100%'} preview={false} src={LTZ}></Image>
+                        <Image width={'100%'} preview={false} src={WYY}></Image>
                       }
                     >
                       <Meta
                         style={{ color: 'black' }}
-                        title={<p className={styles.name}>Tianzi Liu</p>}
+                        title={<p className={styles.name}>Yin-Ying Wang</p>}
                         description={
                           <p
                             className={styles.keyword}
@@ -240,6 +242,29 @@ export default function Page() {
                     </Card>
                   </Col>
                 </Row>
+                <Divider style={{ marginTop: '2%', marginBottom: '2%' }} />
+                <Row justify={'space-around'}>
+                  <Col flex={'230px'}>
+                    <Card
+                      cover={
+                        <Image width={'100%'} preview={false} src={ZXL}></Image>
+                      }
+                    >
+                      <Meta
+                        style={{ color: 'black' }}
+                        title={<p className={styles.name}>Xiuli Zhu</p>}
+                        description={
+                          <p
+                            className={styles.keyword}
+                            style={{ color: 'black' }}
+                          >
+                            MS Candidate
+                          </p>
+                        }
+                      />
+                    </Card>
+                  </Col>
+                </Row>
               </Col>
             </Row>
           </TabPane>
@@ -280,12 +305,12 @@ export default function Page() {
                   <Col flex={'230px'}>
                     <Card
                       cover={
-                        <Image width={'100%'} preview={false} src={WYY}></Image>
+                        <Image width={'100%'} preview={false} src={LTZ}></Image>
                       }
                     >
                       <Meta
                         style={{ color: 'black' }}
-                        title={<p className={styles.name}>Yin-Ying Wang</p>}
+                        title={<p className={styles.name}>Tianzi Liu</p>}
                         description={
                           <p
                             className={styles.keyword}
@@ -300,12 +325,12 @@ export default function Page() {
                   <Col flex={'230px'}>
                     <Card
                       cover={
-                        <Image width={'100%'} preview={false} src={LTZ}></Image>
+                        <Image width={'100%'} preview={false} src={WYY}></Image>
                       }
                     >
                       <Meta
                         style={{ color: 'black' }}
-                        title={<p className={styles.name}>Tianzi Liu</p>}
+                        title={<p className={styles.name}>Yin-Ying Wang</p>}
                         description={
                           <p
                             className={styles.keyword}
@@ -424,6 +449,53 @@ export default function Page() {
                         }
                       />
                     </Card>
+                  </Col>
+                </Row>
+                <Divider style={{ marginTop: '2%', marginBottom: '2%' }} />
+                <Row justify={'center'}>
+                  <Col md={18}>
+                    <Row justify={'space-around'}>
+                      <Col flex={'230px'}>
+                        <Card
+                          cover={
+                            <Image width={'100%'} preview={false} src={ZXL}></Image>
+                          }
+                        >
+                          <Meta
+                            style={{ color: 'black' }}
+                            title={<p className={styles.name}>Xiuli Zhu</p>}
+                            description={
+                              <p
+                                className={styles.keyword}
+                                style={{ color: 'black' }}
+                              >
+                                MS Candidate
+                              </p>
+                            }
+                          />
+                        </Card>
+                      </Col>
+                      <Col flex={'230px'}>
+                        <Card
+                          cover={
+                            <Image width={'100%'} preview={false} src={LH}></Image>
+                          }
+                        >
+                          <Meta
+                            style={{ color: 'black' }}
+                            title={<p className={styles.name}>He Li</p>}
+                            description={
+                              <p
+                                className={styles.keyword}
+                                style={{ color: 'black' }}
+                              >
+                                MS Candidate
+                              </p>
+                            }
+                          />
+                        </Card>
+                      </Col>
+                    </Row>
                   </Col>
                 </Row>
               </Col>
